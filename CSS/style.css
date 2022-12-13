@@ -1,0 +1,129 @@
+/*
+Template Name: PRODUSTRY 
+Author: Md. YEASIN ARAFAT
+Version: 1.0.0
+Author URL:
+UI Designer:
+Description:
+
+Table Of ::content
+=======================
+1. Header Section
+   1.1) Top Bar
+   1.2) Nav Bar
+2. 
+3. 
+4.
+5.
+6. 
+7. 
+*/
+
+/* Common Css Start */
+:root {
+    --primary-color : #ffca36;
+    --secondary-color: #353535;
+    --primary-white: #ffffff;
+    --secondary-white:#dddddd;
+    --text-color: #555555;
+  } 
+  body{
+    font-family: 'Roboto'sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+h1,h2,h3,h4,h5,h6,
+p,
+ol,
+ul,
+small{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--secondary-color)
+}
+/* common css End */
+
+/* Header secton css start */
+#header #top_bar{
+    background: var(--primary-color );
+}
+#header #top_bar_left p{
+    font-size: 14px;
+    color: var(--secondary-color);
+    
+}
+#header #top_bar .top_bar_mid{
+    background: var(--secondary-color);
+    transform: skew(-35deg);
+    padding: 10px 0 ;
+}
+#header #top_bar .top_bar_mid p{
+    transform: skew(35deg);
+    font-size: 14px;
+    color: var(--primary-white);
+    text-align: center;
+}
+#header #top_bar .top_bar_right ul li a i{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;  
+}
+#header #top_bar .top_bar_right ul li {
+    position: relative;
+    line-height: 0;
+}
+#header #top_bar .top_bar_right ul li ::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+}
+#header #top_bar .top_bar_right ul li ::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: black;
+    top: 0;
+    right: 0;
+}
+
+#header #top_bar .top_bar_right ul li a{
+    position: relative;
+}
+#header #top_bar .top_bar_right ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    bottom: 0;
+    left: 0;
+}
+#header #top_bar .top_bar_right ul li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    top: 0;
+    left: 0;
+}
+
+/* Header secton css End*/
+
